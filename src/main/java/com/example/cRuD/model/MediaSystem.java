@@ -16,11 +16,11 @@ public class MediaSystem {
         mediaList.add(new Media("Breaking Bad", "Crime, Drama, Thriller", 2008, 49, 9.5, "Um professor de química do ensino médio tornou-se parceiro produtor de metanfetaminas de um ex-aluno.", "https://www.youtube.com/watch?v=HhesaQXLuRY"));
 
 
-        System.out.println("Bem-vindo ao Sistema de Informações de Filmes e Séries!");
+        System.out.println("Bem-vindo ao IESPFLIX!");
         boolean running = true;
 
         while (running) {
-            System.out.println("\nDigite o título do filme ou série que deseja ver os detalhes (ou 'listar' para ver todos os filmes em ordem alfabética, 'sair' para encerrar): ");
+            System.out.println("\nDigite o título do filme ou série que deseja ver os detalhes (ou 'listar' para ver todos os filmes em ordem alfabética, 'sair' para encerrar)\n --> ");
             String input = scanner.nextLine();
 
             if (input.equalsIgnoreCase("sair")) {
@@ -38,12 +38,12 @@ public class MediaSystem {
                     }
                 }
                 if (!found) {
-                    System.out.println("Filme ou série não encontrado. Tente novamente.");
+                    System.out.println("Filme ou série não encontrado. Tente novamente.\n --> ");
                 }
             }
         }
 
-        System.out.println("Obrigado por usar o Sistema de Informações de Filmes e Séries!");
+        System.out.println("Obrigado por usar o IESPFLIX!");
         scanner.close();
     }
 
