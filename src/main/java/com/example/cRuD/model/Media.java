@@ -1,5 +1,6 @@
 package com.example.cRuD.model;
 
+// Classe dos Filmes
 class Media {
     private String title;
     private String genre;
@@ -9,6 +10,7 @@ class Media {
     private String synopsis;
     private String trailer;
 
+    // Reconhecer variaveis
     public Media(String title, String genre, int year, int duration, double relevance, String synopsis, String trailer) {
         this.title = title;
         this.genre = genre;
